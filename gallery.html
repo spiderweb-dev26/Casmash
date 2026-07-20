@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Casmash Pastry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { stone: { 50: '#fafaf9', 800: '#292524', 950: '#0c0a09' }, amber: { 800: '#92400e', 900: '#78350f' } }, animation: { 'fade-in-up': 'fadeInUp 0.6s ease-out forwards' }, keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } } } }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="w-full p-6 flex justify-between items-center bg-stone-50 border-b border-stone-200 sticky top-0 z-50">
+        <a href="index.html" class="text-3xl font-serif text-amber-900">Casmash Pastry</a>
+        <div class="gap-8 hidden md:flex items-center font-medium">
+            <a href="index.html" class="text-stone-600 hover:text-amber-800 transition-colors">Home</a>
+            <a href="gallery.html" class="text-amber-900 border-b-2 border-amber-900 pb-1">Gallery</a>
+            <a href="order.html" class="px-6 py-2.5 bg-amber-800 text-stone-50 rounded-full hover:bg-amber-900 transition-all hover:shadow-lg">Request Quote</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-20 px-4 md:px-12 max-w-7xl mx-auto w-full animate-fade-in-up">
+        
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-serif text-amber-900 mb-6">Our Creations</h1>
+            <p class="text-stone-600 max-w-2xl mx-auto text-lg">Browse our signature bakes, custom celebration cakes, and homestyle pastries.</p>
+        </div>
+
+        <div class="mb-16 bg-white border border-stone-200 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-amber-900/5 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl pointer-events-none"></div>
+            
+            <div class="text-center mb-8 relative z-10">
+                <span class="text-amber-700 font-medium tracking-widest uppercase text-sm mb-2 block">Available to Order</span>
+                <h2 class="text-3xl font-serif text-amber-900">Signature Menu & Specials</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-5 gap-x-8 text-stone-700 relative z-10 font-medium max-w-5xl mx-auto">
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Cream puffs / Profiterole</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Crème caramel</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Apple pie</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Red velvet</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Black forest gateau</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>White forest</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Cheese cake</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Donuts</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Tiramisu</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Panettone</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Swiss roll</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Cup cakes</span></div>
+                <div class="flex items-center space-x-3"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span><span>Custard cake</span></div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button class="px-5 py-2 bg-amber-900 text-white rounded-full text-sm font-medium">All Portfolio</button>
+            <button class="px-5 py-2 bg-stone-200 text-stone-700 hover:bg-stone-300 rounded-full text-sm transition-colors">Weddings</button>
+            <button class="px-5 py-2 bg-stone-200 text-stone-700 hover:bg-stone-300 rounded-full text-sm transition-colors">Birthdays</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+            <div class="bg-stone-200 aspect-square rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226532319" alt="Elegant rustic wedding cake with natural drizzle and floral accents" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="bg-stone-200 aspect-square rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226531611" alt="Traditional clay Jebena pouring dark roasted coffee into a cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="bg-stone-200 aspect-square rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226533836" alt="Beautiful custom celebration cake with white frosting and gold leaf accents" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="bg-stone-200 aspect-[4/5] md:col-span-2 lg:col-span-1 rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226531965" alt="Tall three-tier wedding cake with cascading fresh roses" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="bg-stone-200 aspect-square rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226533482" alt="Assorted frosted cupcakes arranged beautifully on a rustic wooden table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+            <div class="bg-stone-200 aspect-square rounded-xl shadow-sm flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer">
+                <img src="image_agent_tag_16669329249226531257" alt="Whimsical children's birthday cake decorated with playful themes and a number one" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            </div>
+        </div>
+        
+        <div class="bg-amber-900/10 rounded-3xl p-12 text-center">
+            <h2 class="text-3xl font-serif text-amber-900 mb-4">See something you love?</h2>
+            <p class="text-stone-700 mb-8 max-w-xl mx-auto">Let's collaborate to make something uniquely yours. We accept a limited number of commissions each week.</p>
+            <a href="order.html" class="inline-block px-8 py-4 bg-amber-800 text-stone-50 rounded-full text-lg font-medium hover:bg-amber-900 transition-all hover:scale-105 shadow-md">
+                Begin Your Order
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-stone-950 text-stone-400 py-12 text-center mt-auto">
+        <div class="max-w-4xl mx-auto px-4 space-y-6">
+            <h3 class="text-2xl font-serif text-amber-800">Casmash Pastry</h3>
+            <div class="flex justify-center gap-6">
+                <a href="#" class="hover:text-amber-500 transition-colors">TikTok</a>
+                <a href="#" class="hover:text-amber-500 transition-colors">Instagram</a>
+            </div>
+            <p class="text-xs pt-8 border-t border-stone-800">&copy; 2026 Casmash Pastry. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
