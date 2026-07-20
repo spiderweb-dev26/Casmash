@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Casmash Pastry</title>
-    <!-- Bring in happy, bakery-style Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,7 +29,7 @@
                     } 
                 } 
             } 
-        }; // Added the semicolon for VS Code!
+        };
     </script>
 </head>
 <body class="bg-cream text-choco font-sans antialiased flex flex-col min-h-screen selection:bg-strawberry selection:text-white">
@@ -48,7 +47,6 @@
     <main class="flex-grow">
         <!-- Playful Hero Section -->
         <section class="relative w-full min-h-[85vh] flex flex-col items-center justify-center bg-gradient-to-b from-rose-50 to-cream overflow-hidden">
-            <!-- Decorative background blobs -->
             <div class="absolute top-10 left-10 w-64 h-64 bg-dough rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-bounce-slight"></div>
             <div class="absolute bottom-10 right-10 w-72 h-72 bg-rose-200 rounded-full mix-blend-multiply filter blur-3xl opacity-60"></div>
 
@@ -69,7 +67,7 @@
             </div>
         </section>
 
-        <!-- Pinned Specials Section (Moved to Homepage with Images) -->
+        <!-- Pinned Specials Section -->
         <section class="py-24 px-4 md:px-12 max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-5xl font-cursive text-caramel mb-4">Our Signature Specials</h2>
@@ -78,15 +76,13 @@
 
             <!-- Image Grid for Specials -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                <!-- Special 1 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1614083020613-2d1f7c5e533e?w=800&q=80" alt="Cream Puffs" class="w-full h-64 object-cover" />
+                    <img src="https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?w=800&q=80" alt="Cream Puffs" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-choco mb-2">Cream Puffs & Profiteroles</h3>
                         <p class="text-choco/70 font-semibold">Light, airy choux pastry filled with rich cream.</p>
                     </div>
                 </div>
-                <!-- Special 2 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=800&q=80" alt="Red Velvet Cake" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
@@ -94,7 +90,6 @@
                         <p class="text-choco/70 font-semibold">Perfectly moist with our signature cream cheese frosting.</p>
                     </div>
                 </div>
-                <!-- Special 3 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80" alt="Cheesecake" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
@@ -102,7 +97,6 @@
                         <p class="text-choco/70 font-semibold">Rich, creamy, and baked to absolute perfection.</p>
                     </div>
                 </div>
-                <!-- Special 4 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80" alt="Donuts" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
@@ -110,15 +104,13 @@
                         <p class="text-choco/70 font-semibold">Soft, fluffy, and covered in vibrant, happy glazes.</p>
                     </div>
                 </div>
-                <!-- Special 5 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
-                    <img src="https://images.unsplash.com/photo-1621236378699-8597faa6a71e?w=800&q=80" alt="Apple Pie" class="w-full h-64 object-cover" />
+                    <img src="https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?w=800&q=80" alt="Apple Pie" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-choco mb-2">Warm Apple Pie</h3>
                         <p class="text-choco/70 font-semibold">A homestyle classic with a flaky, buttery crust.</p>
                     </div>
                 </div>
-                <!-- Special 6 -->
                 <div class="bg-white rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 transition-all duration-300">
                     <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=800&q=80" alt="Cupcakes" class="w-full h-64 object-cover" />
                     <div class="p-6 text-center">
@@ -147,9 +139,8 @@
         <section class="py-24 px-4 md:px-12 bg-white flex flex-col md:flex-row items-center gap-16">
             <div class="w-full md:w-1/2 flex justify-center">
                 <div class="relative">
-                    <!-- Fun decorative background blob -->
                     <div class="absolute -inset-4 bg-dough rounded-full transform -rotate-6"></div>
-                    <img src="https://images.unsplash.com/photo-1556206079-a1b7a2bb0ce0?w=800&q=80" alt="Happy Baker" class="relative z-10 w-full max-w-md rounded-3xl shadow-2xl object-cover h-[500px]" />
+                    <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&q=80" alt="Happy Baker working with dough" class="relative z-10 w-full max-w-md rounded-3xl shadow-2xl object-cover h-[500px]" />
                 </div>
             </div>
             <div class="w-full md:w-1/2 space-y-6 max-w-xl">
