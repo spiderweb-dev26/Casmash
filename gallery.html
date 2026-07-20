@@ -28,42 +28,37 @@
             <p class="text-choco/70 font-bold max-w-2xl mx-auto text-xl">Browse our custom celebration cakes, rustic wedding centerpieces, and homestyle pastries.</p>
         </div>
 
-        <!-- Filter Buttons (Now wired to JS via data-filter) -->
+        <!-- Filter Buttons -->
         <div class="flex flex-wrap justify-center gap-4 mb-10">
             <button data-filter="all" class="filter-btn px-6 py-3 bg-berry text-white rounded-full text-lg font-bold shadow-md transition-colors border border-dough">All Portfolio</button>
             <button data-filter="wedding" class="filter-btn px-6 py-3 bg-white text-choco hover:bg-dough rounded-full text-lg font-bold shadow-sm transition-colors border border-dough">Weddings</button>
             <button data-filter="birthday" class="filter-btn px-6 py-3 bg-white text-choco hover:bg-dough rounded-full text-lg font-bold shadow-sm transition-colors border border-dough">Birthdays</button>
         </div>
 
-        <!-- Image Grid (Now wired with data-category) -->
+        <!-- Image Grid with Fixed URLs -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             
-            <!-- Wedding Category -->
             <div data-category="wedding" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80" alt="Beautiful floral wedding cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
 
-            <!-- Birthday Category -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=800&q=80" alt="Elegant celebration cake with cone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
 
-            <!-- Birthday Category -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=800&q=80" alt="Delicious cake slice" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
 
-            <!-- NEW Replacement Image! (Wedding Category) -->
+            <!-- Fixed stable image URL here -->
             <div data-category="wedding" class="gallery-item bg-white aspect-[4/5] md:col-span-2 lg:col-span-1 rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1557925923-33b25121b001?w=800&q=80" alt="Tall gorgeous tiered cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://images.unsplash.com/photo-1519869325930-281384150729?w=800&q=80" alt="Tall gorgeous tiered cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
 
-            <!-- Birthday Category -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80" alt="Colorful frosted cupcakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
 
-            <!-- Birthday Category -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=800&q=80" alt="Fun vibrant birthday cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
             </div>
@@ -88,5 +83,9 @@
             <p class="text-sm font-semibold pt-8 border-t border-white/10">&copy; 2026 Casmash Pastry. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- THIS WAS MISSING: Links app.js so the filter buttons work! -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
