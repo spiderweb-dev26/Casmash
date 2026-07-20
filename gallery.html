@@ -12,6 +12,7 @@
 </head>
 <body class="bg-cream text-choco font-sans antialiased flex flex-col min-h-screen">
 
+    <!-- Navigation -->
     <nav class="w-full p-6 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-dough sticky top-0 z-50 shadow-sm">
         <a href="index.html" class="text-3xl font-cursive text-berry tracking-wide">Casmash Pastry</a>
         <div class="gap-8 hidden md:flex items-center font-bold text-lg">
@@ -54,6 +55,7 @@
         <!-- Gallery Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             
+            <!-- 1. Wedding Cake (Working) -->
             <div data-category="wedding" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80" alt="Wedding Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -61,6 +63,7 @@
                 </div>
             </div>
 
+            <!-- 2. Cream Puffs (Working) -->
             <div data-category="puffs" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=800&q=80" alt="Cream Puffs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -68,20 +71,23 @@
                 </div>
             </div>
 
+            <!-- 3. Crème Caramel (FIXED: Permanent Wikipedia Link) -->
             <div data-category="caramel" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1526318896980-cf78c08b2474?w=800&q=80" alt="Crème Caramel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Creme_caramel.jpg?width=800" alt="Crème Caramel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <span class="text-white font-bold text-lg">Crème Caramel</span>
                 </div>
             </div>
 
+            <!-- 4. Apple Pie (FIXED: Permanent Wikipedia Link) -->
             <div data-category="pie" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75e2?w=800&q=80" alt="Apple Pie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple_pie.jpg?width=800" alt="Apple Pie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <span class="text-white font-bold text-lg">Apple Pie</span>
                 </div>
             </div>
 
+            <!-- 5. Red Velvet (Working) -->
             <div data-category="velvet" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=800&q=80" alt="Red Velvet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -89,6 +95,7 @@
                 </div>
             </div>
 
+            <!-- 6. Black & White Forest Gateau (Working) -->
             <div data-category="forest" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80" alt="Black Forest Gateau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -96,6 +103,7 @@
                 </div>
             </div>
 
+            <!-- 7. Cheese Cake (Working) -->
             <div data-category="cheesecake" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80" alt="Cheese Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -103,6 +111,7 @@
                 </div>
             </div>
 
+            <!-- 8. Donuts (Working) -->
             <div data-category="donuts" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80" alt="Donuts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -110,6 +119,7 @@
                 </div>
             </div>
 
+            <!-- 9. Tiramisu (Working) -->
             <div data-category="tiramisu" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&q=80" alt="Tiramisu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -117,14 +127,15 @@
                 </div>
             </div>
 
-            <!-- FIXED: Raw, un-expiring Wikimedia Image Link for Panettone -->
+            <!-- 10. Panettone (FIXED: Permanent Wikipedia Link) -->
             <div data-category="panettone" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Panettone_-_Nicoletta_in_Dresden.jpg" alt="Authentic Panettone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panettone.jpg?width=800" alt="Panettone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <span class="text-white font-bold text-lg">Panettone</span>
                 </div>
             </div>
 
+            <!-- 11. Swiss Roll (Working) -->
             <div data-category="roll" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800&q=80" alt="Swiss Roll" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -132,6 +143,7 @@
                 </div>
             </div>
 
+            <!-- 12. Cup Cakes (Working) -->
             <div data-category="cupcakes" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80" alt="Cup Cakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -139,13 +151,15 @@
                 </div>
             </div>
 
+            <!-- 13. Custard Cake (FIXED: Permanent Wikipedia Link) -->
             <div data-category="custard" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?w=800&q=80" alt="Custard Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Custard_tart.jpg?width=800" alt="Custard Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                     <span class="text-white font-bold text-lg">Custard Cake</span>
                 </div>
             </div>
 
+            <!-- 14. Celebration / Birthday Cake (Working) -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
                 <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=800&q=80" alt="Birthday Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
@@ -155,6 +169,7 @@
 
         </div>
         
+        <!-- Call to Action Banner -->
         <div class="bg-gradient-to-r from-dough to-rose-200 rounded-[3rem] p-12 text-center shadow-lg border-4 border-white">
             <h2 class="text-4xl font-cursive text-berry mb-4">See something you love?</h2>
             <p class="text-choco/80 font-bold text-lg mb-8 max-w-xl mx-auto">Let's collaborate to make something uniquely yours. We accept a limited number of commissions each week.</p>
@@ -164,6 +179,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-choco text-cream py-12 text-center mt-auto">
         <div class="max-w-4xl mx-auto px-4 space-y-6">
             <h3 class="text-3xl font-cursive text-dough">Casmash Pastry</h3>
@@ -175,6 +191,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
