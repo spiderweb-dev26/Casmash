@@ -24,44 +24,148 @@
     <main class="flex-grow py-20 px-4 md:px-12 max-w-7xl mx-auto w-full animate-fade-in-up">
         
         <div class="text-center mb-12">
-            <h1 class="text-6xl font-cursive text-berry mb-6">Our Creations</h1>
-            <p class="text-choco/70 font-bold max-w-2xl mx-auto text-xl">Browse our custom celebration cakes, rustic wedding centerpieces, and homestyle pastries.</p>
+            <h1 class="text-6xl font-cursive text-berry mb-6">Our Creations & Specials</h1>
+            <p class="text-choco/70 font-bold max-w-2xl mx-auto text-xl">Click any of our signature specialties below to explore our work across categories.</p>
         </div>
 
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap justify-center gap-4 mb-10">
-            <button data-filter="all" class="filter-btn px-6 py-3 bg-berry text-white rounded-full text-lg font-bold shadow-md transition-colors border border-dough">All Portfolio</button>
-            <button data-filter="wedding" class="filter-btn px-6 py-3 bg-white text-choco hover:bg-dough rounded-full text-lg font-bold shadow-sm transition-colors border border-dough">Weddings</button>
-            <button data-filter="birthday" class="filter-btn px-6 py-3 bg-white text-choco hover:bg-dough rounded-full text-lg font-bold shadow-sm transition-colors border border-dough">Birthdays</button>
+        <!-- Interactive Filter Menu (Clickable Specialty Tags) -->
+        <div class="mb-16 bg-white border-4 border-dough rounded-[2.5rem] p-8 md:p-10 shadow-lg text-center max-w-5xl mx-auto">
+            <h2 class="text-2xl font-cursive text-caramel mb-6">Filter by Signature Specialty:</h2>
+            
+            <div class="flex flex-wrap justify-center gap-3">
+                <button data-filter="all" class="filter-btn px-5 py-2.5 bg-berry text-white rounded-full text-base font-bold shadow-md transition-all hover:scale-105">All Specials</button>
+                <button data-filter="wedding" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Weddings</button>
+                <button data-filter="birthday" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Birthdays</button>
+                <button data-filter="puffs" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Cream Puffs</button>
+                <button data-filter="caramel" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Crème Caramel</button>
+                <button data-filter="pie" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Apple Pie</button>
+                <button data-filter="velvet" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Red Velvet</button>
+                <button data-filter="forest" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Black/White Forest</button>
+                <button data-filter="cheesecake" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Cheese Cake</button>
+                <button data-filter="donuts" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Donuts</button>
+                <button data-filter="tiramisu" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Tiramisu</button>
+                <button data-filter="panettone" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Panettone</button>
+                <button data-filter="roll" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Swiss Roll</button>
+                <button data-filter="cupcakes" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Cup Cakes</button>
+                <button data-filter="custard" class="filter-btn px-5 py-2.5 bg-cream text-choco hover:bg-dough rounded-full text-base font-bold shadow-sm transition-all border border-dough">Custard Cake</button>
+            </div>
         </div>
 
-        <!-- Image Grid with Fixed URLs -->
+        <!-- Gallery Grid with Classified Items -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             
+            <!-- Wedding -->
             <div data-category="wedding" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80" alt="Beautiful floral wedding cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80" alt="Wedding Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Wedding Cake</span>
+                </div>
             </div>
 
+            <!-- Cream Puffs -->
+            <div data-category="puffs" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?w=800&q=80" alt="Cream Puffs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Cream Puffs / Profiterole</span>
+                </div>
+            </div>
+
+            <!-- Crème Caramel -->
+            <div data-category="caramel" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1527784379553-dca2a5f28d6f?w=800&q=80" alt="Crème Caramel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Crème Caramel</span>
+                </div>
+            </div>
+
+            <!-- Apple Pie -->
+            <div data-category="pie" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?w=800&q=80" alt="Apple Pie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Apple Pie</span>
+                </div>
+            </div>
+
+            <!-- Red Velvet -->
+            <div data-category="velvet" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=800&q=80" alt="Red Velvet" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Red Velvet</span>
+                </div>
+            </div>
+
+            <!-- Black & White Forest -->
+            <div data-category="forest" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80" alt="Black Forest Gateau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Black & White Forest Gateau</span>
+                </div>
+            </div>
+
+            <!-- Cheesecake -->
+            <div data-category="cheesecake" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80" alt="Cheese Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Cheese Cake</span>
+                </div>
+            </div>
+
+            <!-- Donuts -->
+            <div data-category="donuts" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80" alt="Donuts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Donuts</span>
+                </div>
+            </div>
+
+            <!-- Tiramisu -->
+            <div data-category="tiramisu" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800&q=80" alt="Tiramisu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Tiramisu</span>
+                </div>
+            </div>
+
+            <!-- Panettone -->
+            <div data-category="panettone" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?w=800&q=80" alt="Panettone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Panettone</span>
+                </div>
+            </div>
+
+            <!-- Swiss Roll -->
+            <div data-category="roll" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80" alt="Swiss Roll" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Swiss Roll</span>
+                </div>
+            </div>
+
+            <!-- Cup Cakes -->
+            <div data-category="cupcakes" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80" alt="Cup Cakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Cup Cakes</span>
+                </div>
+            </div>
+
+            <!-- Custard Cake -->
+            <div data-category="custard" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=800&q=80" alt="Custard Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Custard Cake</span>
+                </div>
+            </div>
+
+            <!-- Birthday -->
             <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=800&q=80" alt="Elegant celebration cake with cone" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=800&q=80" alt="Birthday Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <div class="absolute inset-0 bg-choco/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <span class="text-white font-bold text-lg">Celebration / Birthday Cake</span>
+                </div>
             </div>
 
-            <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=800&q=80" alt="Delicious cake slice" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            </div>
-
-            <!-- Fixed stable image URL here -->
-            <div data-category="wedding" class="gallery-item bg-white aspect-[4/5] md:col-span-2 lg:col-span-1 rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1519869325930-281384150729?w=800&q=80" alt="Tall gorgeous tiered cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            </div>
-
-            <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&q=80" alt="Colorful frosted cupcakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            </div>
-
-            <div data-category="birthday" class="gallery-item bg-white aspect-square rounded-3xl shadow-xl flex flex-col items-center justify-center overflow-hidden group relative cursor-pointer border-4 border-white">
-                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=800&q=80" alt="Fun vibrant birthday cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            </div>
         </div>
         
         <div class="bg-gradient-to-r from-dough to-rose-200 rounded-[3rem] p-12 text-center shadow-lg border-4 border-white">
@@ -84,7 +188,6 @@
         </div>
     </footer>
 
-    <!-- THIS WAS MISSING: Links app.js so the filter buttons work! -->
     <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
