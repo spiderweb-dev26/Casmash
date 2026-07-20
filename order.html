@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request a Quote | Casmash Pastry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = { theme: { extend: { colors: { stone: { 50: '#fafaf9', 100: '#f5f5f4', 950: '#0c0a09' }, amber: { 500: '#f59e0b', 800: '#92400e', 900: '#78350f' } }, animation: { 'fade-in-up': 'fadeInUp 0.6s ease-out forwards' }, keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } } } }
+        tailwind.config = { theme: { extend: { colors: { cream: '#fffdf8', dough: '#fde68a', strawberry: '#fb7185', berry: '#e11d48', choco: '#451a03', caramel: '#b45309' }, fontFamily: { sans: ['Nunito', 'sans-serif'], cursive: ['Pacifico', 'cursive'] }, animation: { 'fade-in-up': 'fadeInUp 0.6s ease-out forwards' }, keyframes: { fadeInUp: { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } } } } };
     </script>
 </head>
-<body class="bg-stone-100 text-stone-900 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-rose-50 text-choco font-sans antialiased flex flex-col min-h-screen selection:bg-strawberry selection:text-white">
 
-    <nav class="w-full p-6 flex justify-between items-center bg-stone-50 border-b border-stone-200 sticky top-0 z-50">
-        <a href="index.html" class="text-3xl font-serif text-amber-900">Casmash Pastry</a>
-        <div class="gap-8 hidden md:flex items-center font-medium">
-            <a href="index.html" class="text-stone-600 hover:text-amber-800 transition-colors">Home</a>
-            <a href="gallery.html" class="text-stone-600 hover:text-amber-800 transition-colors">Gallery</a>
-            <a href="order.html" class="px-6 py-2.5 bg-amber-900 text-stone-50 rounded-full shadow-md">Request Quote</a>
+    <nav class="w-full p-6 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-dough sticky top-0 z-50 shadow-sm">
+        <a href="index.html" class="text-3xl font-cursive text-berry tracking-wide">Casmash Pastry</a>
+        <div class="gap-8 hidden md:flex items-center font-bold text-lg">
+            <a href="index.html" class="text-choco/70 hover:text-berry transition-colors">Home</a>
+            <a href="gallery.html" class="text-choco/70 hover:text-berry transition-colors">Gallery</a>
+            <a href="order.html" class="px-6 py-2.5 bg-berry text-white rounded-full shadow-md">Request Quote</a>
         </div>
     </nav>
 
     <main class="flex-grow py-20 animate-fade-in-up">
-        <div class="max-w-4xl mx-auto px-4 flex flex-col lg:flex-row gap-12">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col lg:flex-row gap-12">
             
+            <!-- Left Side: The Form -->
             <div class="flex-grow lg:w-2/3">
-                <h1 class="text-4xl font-serif text-amber-900 mb-4">Request a Quote</h1>
-                <p class="text-stone-600 mb-10 text-lg">
+                <h1 class="text-5xl font-cursive text-berry mb-4">Request a Quote</h1>
+                <p class="text-choco/80 font-bold mb-10 text-xl">
                     We currently fulfill 5 to 10 custom celebration cakes per week. Please provide full details below to secure your date.
                 </p>
                 
-                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-stone-200">
+                <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl border-4 border-dough">
                     <form id="orderForm" class="space-y-6">
                         
                         <!-- Step 1 -->
-                        <div id="step1" class="space-y-6 block opacity-100 transition-opacity duration-300">
-                            <h3 class="text-2xl font-serif text-amber-800 border-b pb-3">1. Event Details</h3>
+                        <div id="step1" class="space-y-8 block opacity-100 transition-opacity duration-300">
+                            <h3 class="text-3xl font-cursive text-caramel border-b-2 border-dough pb-3">1. Event Details</h3>
                             
                             <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Event Type</label>
-                                <select id="eventType" class="w-full border border-stone-300 rounded-xl p-4 bg-stone-50 focus:ring-2 focus:ring-amber-500 outline-none transition-shadow">
+                                <label class="block text-lg font-bold text-choco mb-2">Event Type</label>
+                                <select id="eventType" class="w-full border-2 border-dough rounded-2xl p-4 bg-cream focus:ring-4 focus:ring-dough outline-none transition-all font-bold text-choco">
                                     <option>Wedding</option>
                                     <option>Children's Birthday</option>
                                     <option>Direct to Consumer / Retail</option>
@@ -46,55 +48,55 @@
                             </div>
 
                             <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Requested Date</label>
-                                <input type="date" id="eventDate" class="w-full border border-stone-300 rounded-xl p-4 bg-stone-50 focus:ring-2 focus:ring-amber-500 outline-none transition-shadow" />
+                                <label class="block text-lg font-bold text-choco mb-2">Requested Date</label>
+                                <input type="date" id="eventDate" class="w-full border-2 border-dough rounded-2xl p-4 bg-cream focus:ring-4 focus:ring-dough outline-none transition-all font-bold text-choco" />
                             </div>
 
-                            <button type="button" id="nextBtn" class="w-full mt-6 py-4 bg-amber-800 text-white rounded-xl hover:bg-amber-900 transition-all hover:shadow-lg font-medium text-lg">
+                            <button type="button" id="nextBtn" class="w-full mt-8 py-5 bg-berry text-white rounded-2xl hover:bg-rose-700 transition-all hover:scale-[1.02] shadow-lg font-bold text-xl">
                                 Next: Design Specifications
                             </button>
                         </div>
 
                         <!-- Step 2 -->
-                        <div id="step2" class="space-y-6 hidden opacity-0 transition-opacity duration-300">
-                            <h3 class="text-2xl font-serif text-amber-800 border-b pb-3">2. Design & Fulfillment</h3>
+                        <div id="step2" class="space-y-8 hidden opacity-0 transition-opacity duration-300">
+                            <h3 class="text-3xl font-cursive text-caramel border-b-2 border-dough pb-3">2. Design & Fulfillment</h3>
                             
                             <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-3">Product Type</label>
-                                <div class="flex flex-col gap-3 p-4 border border-stone-200 rounded-xl bg-stone-50">
-                                    <label class="flex items-center space-x-3 cursor-pointer">
-                                        <input type="checkbox" value="Celebration Cake" class="product-type rounded text-amber-600 w-5 h-5 focus:ring-amber-500" />
-                                        <span class="font-medium text-stone-700">Celebration Cake</span>
+                                <label class="block text-lg font-bold text-choco mb-3">Product Type</label>
+                                <div class="flex flex-col gap-4 p-6 border-2 border-dough rounded-2xl bg-cream">
+                                    <label class="flex items-center space-x-4 cursor-pointer">
+                                        <input type="checkbox" value="Celebration Cake" class="product-type rounded-md text-berry w-6 h-6 focus:ring-berry" />
+                                        <span class="font-bold text-lg text-choco">Celebration Cake</span>
                                     </label>
-                                    <label class="flex items-center space-x-3 cursor-pointer">
-                                        <input type="checkbox" value="Cupcakes/Portions" class="product-type rounded text-amber-600 w-5 h-5 focus:ring-amber-500" />
-                                        <span class="font-medium text-stone-700">Cupcakes / Individual Portions</span>
+                                    <label class="flex items-center space-x-4 cursor-pointer">
+                                        <input type="checkbox" value="Cupcakes/Portions" class="product-type rounded-md text-berry w-6 h-6 focus:ring-berry" />
+                                        <span class="font-bold text-lg text-choco">Cupcakes / Individual Portions</span>
                                     </label>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Design Vision</label>
-                                <textarea id="designVision" rows="5" class="w-full border border-stone-300 rounded-xl p-4 bg-stone-50 focus:ring-2 focus:ring-amber-500 outline-none transition-shadow" placeholder="Describe your theme, colors, textures, and preferred flavors..."></textarea>
+                                <label class="block text-lg font-bold text-choco mb-2">Design Vision</label>
+                                <textarea id="designVision" rows="4" class="w-full border-2 border-dough rounded-2xl p-4 bg-cream focus:ring-4 focus:ring-dough outline-none transition-all font-bold text-choco placeholder:text-choco/40" placeholder="Describe your theme, colors, textures, and preferred flavors..."></textarea>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Fulfillment Preference</label>
-                                <select id="fulfillment" class="w-full border border-stone-300 rounded-xl p-4 bg-stone-50 focus:ring-2 focus:ring-amber-500 outline-none transition-shadow">
+                                <label class="block text-lg font-bold text-choco mb-2">Fulfillment Preference</label>
+                                <select id="fulfillment" class="w-full border-2 border-dough rounded-2xl p-4 bg-cream focus:ring-4 focus:ring-dough outline-none transition-all font-bold text-choco">
                                     <option>In-store / Bakery Pickup</option>
                                     <option>Local Courier Delivery</option>
                                 </select>
                             </div>
 
-                            <div class="flex flex-col sm:flex-row gap-4 pt-6">
-                                <button type="button" id="backBtn" class="w-full sm:w-1/4 py-4 bg-stone-200 text-stone-700 font-medium rounded-xl hover:bg-stone-300 transition-colors">
+                            <div class="flex flex-col sm:flex-row gap-4 pt-8">
+                                <button type="button" id="backBtn" class="w-full sm:w-1/4 py-5 bg-dough text-choco font-bold text-lg rounded-2xl hover:bg-yellow-300 transition-colors">
                                     Back
                                 </button>
                                 <div class="w-full sm:w-3/4 flex gap-3">
-                                    <button type="button" id="submitTelegram" class="flex-1 py-4 bg-[#0088cc] text-white font-medium rounded-xl hover:bg-[#0077b3] transition-all hover:shadow-lg text-center flex justify-center items-center gap-2">
+                                    <button type="button" id="submitTelegram" class="flex-1 py-5 bg-[#0088cc] text-white font-bold text-lg rounded-2xl hover:bg-[#0077b3] transition-all hover:scale-[1.02] shadow-lg flex justify-center items-center gap-2">
                                         Telegram
                                     </button>
-                                    <button type="button" id="submitWhatsApp" class="flex-1 py-4 bg-[#25D366] text-white font-medium rounded-xl hover:bg-[#20bd5a] transition-all hover:shadow-lg text-center flex justify-center items-center gap-2">
+                                    <button type="button" id="submitWhatsApp" class="flex-1 py-5 bg-[#25D366] text-white font-bold text-lg rounded-2xl hover:bg-[#20bd5a] transition-all hover:scale-[1.02] shadow-lg flex justify-center items-center gap-2">
                                         WhatsApp
                                     </button>
                                 </div>
@@ -104,22 +106,23 @@
                 </div>
             </div>
 
+            <!-- Right Side: FAQ Sidebar -->
             <div class="lg:w-1/3 space-y-8 mt-12 lg:mt-0">
-                <div class="bg-stone-200/50 p-8 rounded-3xl">
-                    <h3 class="text-2xl font-serif text-amber-900 mb-6">Order FAQ</h3>
+                <div class="bg-white border-4 border-dough p-8 rounded-[2.5rem] shadow-xl">
+                    <h3 class="text-3xl font-cursive text-berry mb-6">Order FAQ</h3>
                     
                     <div class="space-y-6">
-                        <div>
-                            <h4 class="font-medium text-stone-900 mb-1">How far in advance should I order?</h4>
-                            <p class="text-sm text-stone-600">We recommend reaching out at least 3 weeks prior to your event. Our calendar fills up quickly as we cap our capacity to ensure quality.</p>
+                        <div class="bg-cream p-5 rounded-2xl">
+                            <h4 class="font-bold text-lg text-choco mb-2">How far in advance should I order?</h4>
+                            <p class="text-sm font-bold text-choco/70">We recommend reaching out at least 3 weeks prior to your event. Our calendar fills up quickly!</p>
                         </div>
-                        <div>
-                            <h4 class="font-medium text-stone-900 mb-1">Do you deliver?</h4>
-                            <p class="text-sm text-stone-600">Yes, we offer a local courier delivery service for an additional fee based on distance.</p>
+                        <div class="bg-cream p-5 rounded-2xl">
+                            <h4 class="font-bold text-lg text-choco mb-2">Do you deliver?</h4>
+                            <p class="text-sm font-bold text-choco/70">Yes, we offer a local courier delivery service for an additional fee based on distance.</p>
                         </div>
-                        <div>
-                            <h4 class="font-medium text-stone-900 mb-1">What happens after I submit?</h4>
-                            <p class="text-sm text-stone-600">We will review your design specifications and date availability. Expect a reply to your message within 48 hours.</p>
+                        <div class="bg-cream p-5 rounded-2xl">
+                            <h4 class="font-bold text-lg text-choco mb-2">What happens next?</h4>
+                            <p class="text-sm font-bold text-choco/70">We will review your details. Expect a reply to your message within 48 hours.</p>
                         </div>
                     </div>
                 </div>
@@ -128,14 +131,14 @@
         </div>
     </main>
 
-    <footer class="bg-stone-950 text-stone-400 py-12 text-center mt-auto">
+    <footer class="bg-choco text-cream py-12 text-center mt-auto">
         <div class="max-w-4xl mx-auto px-4 space-y-6">
-            <h3 class="text-2xl font-serif text-amber-800">Casmash Pastry</h3>
-            <div class="flex justify-center gap-6">
-                <a href="#" class="hover:text-amber-500 transition-colors">TikTok</a>
-                <a href="#" class="hover:text-amber-500 transition-colors">Instagram</a>
+            <h3 class="text-3xl font-cursive text-dough">Casmash Pastry</h3>
+            <div class="flex justify-center gap-6 font-bold">
+                <a href="#" class="hover:text-strawberry transition-colors">TikTok</a>
+                <a href="#" class="hover:text-strawberry transition-colors">Instagram</a>
             </div>
-            <p class="text-xs pt-8 border-t border-stone-800">&copy; 2026 Casmash Pastry. All rights reserved.</p>
+            <p class="text-sm font-semibold pt-8 border-t border-white/10">&copy; 2026 Casmash Pastry. All rights reserved.</p>
         </div>
     </footer>
 
